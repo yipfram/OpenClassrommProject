@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600&family=Quicksand:wght@400;500;600;700&display=swap");
+html {
+  --res: calc(0.01 * 10vmin);
+  --background: #B8CBD0;
+  --cardbackground: #709CA7;
+  --color: black;
+  --footercolor: #137C8B;
+  --hardpurple: #5e4fff;
+  --purple: #8f85ff;
+  --selection: #137C8B;
+  --notaccent: #CDEFF6;
+  --lexend: "Lexend Deca";
+  --quicksand: "Quicksand";
+  font-family: var(--lexend), var(--quicksand);
+}
+
+.siteTitle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: var(--cardbackground);
+}
+.siteTitle span {
+  font-size: calc(55 * var(--res));
+  font-family: var(--lexend);
+  color: black;
+}
+
+.siteTitle:hover .dropDownTitleContent {
+  display: block;
+  position: absolute;
+}
+
+.dropDownTitleContent {
+  display: none;
+  left: 35%;
+  margin-top: 0.5%;
+  z-index: 1;
+  width: 30%;
+  background: var(--notaccent);
+  padding: 3% auto;
+  border-radius: 10px;
+}
+.dropDownTitleContent li {
+  font-size: calc(30 * var(--res));
+  list-style-type: none;
+  font-family: var(--quicksand);
+  font-weight: 600;
+  padding: 3% 5%;
+}
+.dropDownTitleContent li a {
+  text-decoration: none;
+  color: inherit;
+}
+.dropDownTitleContent li:hover {
+  background: var(--footercolor);
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+body {
+  background: var(--background);
+}
+
+::selection {
+  background: var(--selection);
+  color: white;
+}
+
+.screen {
+  width: auto;
+  height: auto;
+  padding: 10% 2%;
+  background: var(--background);
+}
+
+.centeredCard {
+  width: auto;
+  height: auto;
+  margin: 2% 1% 2% 1%;
+  border-radius: 10px;
+  background-color: white;
+  padding: 2% 5% 2% 5%;
+}
+.centeredCard * {
+  display: flex;
+  justify-content: center;
+}
+
+.centeredCard:hover {
+  border: solid black;
+  cursor: pointer;
+}
+
+.centeredCard:active {
+  background: var(--selection);
+  color: white;
+}
+
+.centeredCard:target {
+  color: red;
+  background: var(--notaccent);
+}
+
+.doubleCenteredCard {
+  display: flex;
+}
+.doubleCenteredCard * {
+  display: flex;
+  justify-content: center;
+  width: 55%;
+}
+
+.separator {
+  width: 100%;
+  height: 10%;
+}
+
+h1 {
+  font-size: calc(64 * var(--res));
+  font-family: var(--lexend);
+  color: black;
+}
+
+p {
+  color: var(--color);
+  font-family: var(--lexend);
+}
+
+.dropDownMenu {
+  width: auto;
+  font-family: "Lexend Deca";
+}
+.dropDownMenu span {
+  font-size: calc(34 * var(--res));
+  cursor: pointer;
+}
+
+.dropDownContent {
+  display: none;
+  margin-left: calc(30 * var(--res));
+  z-index: 1;
+  width: 10%;
+  background: var(--notaccent);
+  border-radius: 10px;
+}
+.dropDownContent li {
+  padding: 3% 2% 2% 2%;
+  list-style-type: none;
+  text-align: center;
+}
+.dropDownContent li:hover {
+  background: var(--color);
+  border-radius: 5px;
+}
+.dropDownContent li:hover a {
+  color: white;
+}
+.dropDownContent a {
+  text-decoration: none;
+  color: var(--color);
+}
+
+.dropDownMenu:hover .dropDownContent {
+  display: block;
+  position: absolute;
+}
+
+.heroContainer {
+  width: 100%;
+  padding: 1% 0;
+  text-align: center;
+  background: var(--purple);
+}
+
+form {
+  width: auto;
+  height: auto;
+  padding: 2% 10% 2% 5%;
+  background-color: var(--purple);
+  display: inline-block;
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+select {
+  display: block;
+  width: 100%;
+  padding: calc(20 * var(--res)) calc(30 * var(--res)) calc(20 * var(--res)) calc(30 * var(--res));
+  border-radius: 10px;
+  border: none;
+  background: var(--cardbackground);
+  font-size: calc(25 * var(--res));
+  text-align: center;
+  font-family: var(--lexend);
+}
+
+/*# sourceMappingURL=style.css.map */
